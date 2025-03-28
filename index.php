@@ -640,7 +640,7 @@ $stare = fread($myfile,filesize("zywioly.txt"));
 fclose($myfile);
 $stare=$stare."@balista";
 
-
+$stare=str_replace("slonce","",$stare);
 	$fp = fopen("zywioly.txt", "w");
 
 	
@@ -856,7 +856,11 @@ $przeciwnik=str_replace($podklad,$pomkij,$przeciwnik);
 	
 }
 	
+		$fp = fopen("zywioly.txt", "w");
+
 	
+fputs($fp, "");
+fclose($fp);
 	}
 	
 }

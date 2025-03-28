@@ -815,7 +815,11 @@ $przeciwnik=str_replace($podklad,$pomkij,$przeciwnik);
 	
 }
 	
+		$fp = fopen("zywioly.txt", "w");
+
 	
+fputs($fp, "");
+fclose($fp);
 	}
 	
 }
